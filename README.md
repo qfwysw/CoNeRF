@@ -48,7 +48,6 @@ cd NAFNet
   python pytools/mask_json.py
   ```
 
-  This script generates binary contour masks based on the dataset metadata.
 
 - **Train CoNeRF**
 
@@ -56,23 +55,8 @@ cd NAFNet
   bash mytools/train_demo1_reg.sh
   ```
 
-  This shell script launches training using Nerfstudio with contour regularization.
 
 - **Denoise Point Cloud via Projection**
   ```bash
   python pytools/projection.py
   ```
-  Projects the 3D points onto denoised image space to remove outliers and enhance reconstruction quality.
-
-## Notes
-
-- Ensure all paths in the scripts are correctly set relative to the root directory.
-- The dataset is focused on rice panicles; other plant species may require different configurations or annotations.
-
-## Citation
-
-If you use this code or dataset, please cite the corresponding paper (to be updated).
-
----
-
-For questions or contributions, please open an issue or submit a pull request.
